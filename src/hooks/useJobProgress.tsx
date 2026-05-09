@@ -10,7 +10,7 @@ export const useJobProgress = () => {
 
   useEffect(() => {
     const newSocket = io(SOCKET_URL, {
-      transports: ["polling", "websocket"],
+      transports: ["websocket"],
       withCredentials: true,
       reconnectionAttempts: 5,
       timeout: 10000,
